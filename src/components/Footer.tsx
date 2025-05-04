@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Youtube } from 'lucide-react';
@@ -13,7 +12,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center">
               <img
-                src="/public/lovable-uploads/34ab7668-b0a7-4272-ba68-9ad5cb53bfc2.png"
+                src="/lovable-uploads/34ab7668-b0a7-4272-ba68-9ad5cb53bfc2.png"
                 alt="Sal's Howdaj Logo"
                 className="h-14 w-auto"
               />
