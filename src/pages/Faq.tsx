@@ -151,4 +151,4 @@ const FAQ = () => {
   );
 };
 
-export default Faq;
+export default FAQ;

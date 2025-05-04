@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, MapPin } from 'lucide-react';
+import { Phone, MapPin, Instagram, Facebook, Youtube } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 import { siteConfig } from '@/lib/siteConfig';
 

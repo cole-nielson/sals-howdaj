@@ -117,8 +117,8 @@ export default {
         "scale-in": "scale-in 0.3s ease-out forwards",
       },
       fontFamily: {
-        'inter': ['var(--font-inter)'],
-        'playfair': ['var(--font-playfair)'],
+        'inter': ['Inter', 'sans-serif'],
+        'playfair': ['Playfair Display', 'serif'],
       },
     },
   },
