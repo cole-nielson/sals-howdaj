@@ -22,7 +22,7 @@ const Location = () => {
             <div className="rounded-2xl overflow-hidden shadow-lg h-96">
               <iframe
                 id="howdaj-map"
-                src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&q=${encodeURIComponent(siteConfig.location.address)}`}
+                src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_KEY}&q=${encodeURIComponent(siteConfig.location.address)}`}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
