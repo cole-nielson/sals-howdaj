@@ -1,12 +1,11 @@
-
 export const siteConfig = {
   name: "Sal's Howdaj",
   description: "Authentic Middle Eastern cuisine served from our food truck in Boise, Idaho.",
   location: {
-    address: "225 N 5th St, Boise, ID 83702",
+    address: "7313 W State St, Garden City, ID 83714",
     coordinates: { 
-      lat: 43.616438, 
-      lng: -116.203319 
+      lat: 43.669016, 
+      lng: -116.280964 
     },
     googleMapsUrl: "https://goo.gl/maps/example"
   },
