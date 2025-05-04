@@ -1,7 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
 import MenuCard from '@/components/MenuCard';
 import { menuData, menuCategories } from '@/lib/menu';
+import { SectionFade } from '../components/SectionFade';
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -31,6 +31,8 @@ const Menu = () => {
           </p>
         </div>
       </section>
+
+      <SectionFade />
 
       {/* Category Filter */}
       <section className="py-8 px-4 bg-desert-white border-b">

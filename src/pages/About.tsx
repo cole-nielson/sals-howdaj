@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { SectionFade } from '../components/SectionFade';
 
 // Simplified timeline data
 const timeline = [
@@ -63,6 +64,8 @@ const About = () => {
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-center mb-4">Our Story</h1>
         </div>
       </section>
+
+      <SectionFade />
 
       {/* Founder Story */}
       <section className="py-16 px-4">

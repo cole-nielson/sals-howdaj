@@ -1,6 +1,7 @@
 import React from 'react';
 import EmailSignup from '@/components/EmailSignup';
 import { siteConfig } from '@/lib/siteConfig';
+import { SectionFade } from '../components/SectionFade';
 
 const Catering = () => {
   return (
@@ -15,6 +16,8 @@ const Catering = () => {
           </p>
         </div>
       </section>
+
+      <SectionFade />
 
       {/* Main Content */}
       <section className="py-16 px-4">

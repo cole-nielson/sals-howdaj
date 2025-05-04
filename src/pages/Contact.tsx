@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { Phone, MapPin, Instagram, Facebook, Youtube } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 import { siteConfig } from '@/lib/siteConfig';
+import { SectionFade } from '../components/SectionFade';
 
 const Contact = () => {
   return (
@@ -17,6 +17,8 @@ const Contact = () => {
           </p>
         </div>
       </section>
+
+      <SectionFade />
 
       {/* Contact Section */}
       <section className="py-16 px-4">

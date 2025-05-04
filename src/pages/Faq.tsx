@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import {
   Accordion,
@@ -6,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { SectionFade } from '../components/SectionFade';
 
 const faqData = [
   {
@@ -71,6 +71,8 @@ const FAQ = () => {
           </p>
         </div>
       </section>
+
+      <SectionFade />
 
       {/* FAQ Section */}
       <section className="py-16 px-4">

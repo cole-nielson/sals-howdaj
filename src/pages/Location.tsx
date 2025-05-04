@@ -1,5 +1,6 @@
 import React from 'react';
 import { siteConfig } from '@/lib/siteConfig';
+import { SectionFade } from '../components/SectionFade';
 
 const Location = () => {
   return (
@@ -14,6 +15,8 @@ const Location = () => {
           </p>
         </div>
       </section>
+
+      <SectionFade />
 
       {/* Map Section */}
       <section className="py-16 px-4">
