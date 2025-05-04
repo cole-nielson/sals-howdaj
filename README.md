@@ -1,73 +1,83 @@
-# Welcome to your Lovable project
 
-## Project info
+# Sal's Howdaj - Middle Eastern Food Truck
 
-**URL**: https://lovable.dev/projects/374f0f61-167d-4690-9fd4-af3eb46f5d15
+A marketing website for Sal's Howdaj, a Middle Eastern food truck in Boise, Idaho. This project showcases the menu, story, location, and catering options with a cinematic and minimal design.
 
-## How can I edit this code?
+## Tech Stack
 
-There are several ways of editing your application.
+- React
+- TypeScript
+- React Router
+- TailwindCSS
+- Radix UI Components
+- Tanstack Query
 
-**Use Lovable**
+## Local Development
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/374f0f61-167d-4690-9fd4-af3eb46f5d15) and start prompting.
+### Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js (v18 or newer)
+- npm or yarn
 
-**Use your preferred IDE**
+### Setup and Run
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```bash
+# Clone the repository
+git clone <repository-url>
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# Navigate to project directory
+cd sals-howdaj
 
-Follow these steps:
+# Install dependencies
+npm install
+# or
+yarn install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+# or
+yarn dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Deployment
 
-**Use GitHub Codespaces**
+This project is configured for easy deployment on Vercel:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Create a Vercel account if you don't have one
+2. Connect your GitHub repository to Vercel
+3. Configure the build settings:
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+4. Deploy
 
-## What technologies are used for this project?
+## Project Structure
 
-This project is built with:
+```
+/src
+  /components        - Reusable UI components
+  /lib               - Helper functions and data
+  /pages             - Route-specific page components
+  /public/images     - Static assets and images
+  App.tsx            - Main application entry
+  index.css          - Global styles
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Features
 
-## How can I deploy this project?
+- Responsive, mobile-first design
+- Cinematic video hero section
+- Interactive menu with filtering options
+- Location page with Google Maps integration
+- Contact form with validation
+- Catering information page
+- FAQ section with expandable accordions
 
-Simply open [Lovable](https://lovable.dev/projects/374f0f61-167d-4690-9fd4-af3eb46f5d15) and click on Share -> Publish.
+## Author
 
-## Can I connect a custom domain to my Lovable project?
+Sal's Howdaj
 
-Yes, you can!
+## License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+All rights reserved.
