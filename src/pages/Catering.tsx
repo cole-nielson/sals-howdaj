@@ -1,4 +1,3 @@
-
 import React from 'react';
 import EmailSignup from '@/components/EmailSignup';
 import { siteConfig } from '@/lib/siteConfig';
@@ -77,7 +76,7 @@ const Catering = () => {
             
             <div>
               <img
-                src="/public/lovable-uploads/dd692edd-2445-4490-ad54-882815cfc842.png"
+                src="/lovable-uploads/dd692edd-2445-4490-ad54-882815cfc842.png"
                 alt="Catering spread"
                 className="rounded-2xl shadow-lg w-full h-auto"
               />

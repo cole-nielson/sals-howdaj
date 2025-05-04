@@ -16,7 +16,7 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
   subheading = "Authentic Middle Eastern Cuisine in Boise",
   buttonText = "View Our Menu",
   buttonLink = "/menu",
-  videoSrc = "/public/images/hero.mp4",
+  videoSrc = "/images/hero.mp4",
   overlayOpacity = "opacity-50"
 }) => {
   const navigate = useNavigate();
@@ -30,7 +30,7 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
         loop
         playsInline
         className="absolute inset-0 min-w-full min-h-full object-cover z-0"
-        poster="/public/lovable-uploads/8de6ba25-cbbb-43d2-aef7-deef2314a6ae.png"
+        poster="/lovable-uploads/8de6ba25-cbbb-43d2-aef7-deef2314a6ae.png"
       >
         <source src={videoSrc} type="video/mp4" />
       </video>

@@ -75,7 +75,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="reveal">
               <img
-                src="/public/lovable-uploads/dd692edd-2445-4490-ad54-882815cfc842.png"
+                src="/lovable-uploads/dd692edd-2445-4490-ad54-882815cfc842.png"
                 alt="Signature Dish"
                 className="rounded-2xl shadow-lg w-full h-auto"
               />

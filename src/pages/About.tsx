@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 
 // Simplified timeline data
@@ -71,7 +70,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="reveal">
               <img
-                src="/public/lovable-uploads/8de6ba25-cbbb-43d2-aef7-deef2314a6ae.png"
+                src="/lovable-uploads/8de6ba25-cbbb-43d2-aef7-deef2314a6ae.png"
                 alt="Founder of Sal's Howdaj"
                 className="rounded-2xl shadow-lg w-full h-auto"
               />
