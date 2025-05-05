@@ -1,6 +1,5 @@
 import React from 'react';
 import { siteConfig } from '@/lib/siteConfig';
-import { SectionFade } from '../components/SectionFade';
 
 const Location = () => {
   return (
@@ -8,7 +7,7 @@ const Location = () => {
       {/* Header */}
       <section className="pt-32 pb-16 px-4 bg-desert-tan">
         <div className="container mx-auto text-center">
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4">Find Our Food Truck</h1>
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red">Find Our Food Truck</h1>
           <p className="text-xl max-w-2xl mx-auto">
             We move around Boise to serve you the best Middle Eastern cuisine wherever you are.
             Check our current location and weekly schedule.
@@ -16,13 +15,11 @@ const Location = () => {
         </div>
       </section>
 
-      <SectionFade />
-
       {/* Map Section */}
       <section className="py-16 px-4">
-        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2">
-            <div className="rounded-2xl overflow-hidden shadow-lg h-96">
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div>
+            <div className="rounded-2xl overflow-hidden shadow-lg w-full h-80 md:h-[28rem] lg:h-[32rem]">
               <iframe
                 id="howdaj-map"
                 src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_KEY}&q=${encodeURIComponent(siteConfig.location.address)}`}

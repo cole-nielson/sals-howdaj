@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import MenuCard from '@/components/MenuCard';
 import { menuData, menuCategories } from '@/lib/menu';
-import { SectionFade } from '../components/SectionFade';
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -22,17 +21,14 @@ const Menu = () => {
   return (
     <>
       {/* Menu Header */}
-      <section className="pt-32 pb-12 px-4 bg-desert-tan">
-        <div className="container mx-auto text-center max-w-3xl">
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4">Our Menu</h1>
-          <p className="text-lg mb-8">
-            Discover our authentic Middle Eastern flavors, crafted with love and tradition.
-            Each dish tells a story from the streets of Damascus.
+      <section className="pt-32 pb-16 px-4 bg-desert-tan">
+        <div className="container mx-auto text-center">
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red">Our Menu</h1>
+          <p className="text-xl max-w-2xl mx-auto">
+            Explore our authentic Middle Eastern dishes, made with fresh ingredients and traditional recipes.
           </p>
         </div>
       </section>
-
-      <SectionFade />
 
       {/* Category Filter */}
       <section className="py-8 px-4 bg-desert-white border-b">

@@ -5,7 +5,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { SectionFade } from '../components/SectionFade';
 
 const faqData = [
   {
@@ -65,14 +64,12 @@ const FAQ = () => {
       {/* Header */}
       <section className="pt-32 pb-16 px-4 bg-desert-tan">
         <div className="container mx-auto text-center">
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4">Frequently Asked Questions</h1>
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red">Frequently Asked Questions</h1>
           <p className="text-xl max-w-2xl mx-auto">
-            Find answers to common questions about Sal's Howdaj, our food, services, and more.
+            Find answers to common questions about our food, services, and policies.
           </p>
         </div>
       </section>
-
-      <SectionFade />
 
       {/* FAQ Section */}
       <section className="py-16 px-4">

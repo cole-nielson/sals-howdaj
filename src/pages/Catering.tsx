@@ -1,7 +1,6 @@
 import React from 'react';
 import EmailSignup from '@/components/EmailSignup';
 import { siteConfig } from '@/lib/siteConfig';
-import { SectionFade } from '../components/SectionFade';
 
 const Catering = () => {
   return (
@@ -9,15 +8,13 @@ const Catering = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4 relative bg-desert-tan">
         <div className="container mx-auto text-center">
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4">Catering Services</h1>
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red">Catering Services</h1>
           <p className="text-xl max-w-2xl mx-auto">
             Bring the authentic flavors of Sal's Howdaj to your next event.
             From intimate gatherings to large celebrations.
           </p>
         </div>
       </section>
-
-      <SectionFade />
 
       {/* Main Content */}
       <section className="py-16 px-4">

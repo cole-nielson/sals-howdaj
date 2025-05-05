@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { SectionFade } from '../components/SectionFade';
 
 // Simplified timeline data
 const timeline = [
@@ -60,12 +59,13 @@ const About = () => {
     <>
       {/* Header */}
       <section className="pt-32 pb-16 px-4 bg-desert-tan">
-        <div className="container mx-auto">
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold text-center mb-4">Our Story</h1>
+        <div className="container mx-auto text-center">
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red">Our Story</h1>
+          <p className="text-xl max-w-2xl mx-auto">
+            Discover the journey behind Sal's Howdaj and our passion for authentic Middle Eastern cuisine.
+          </p>
         </div>
       </section>
-
-      <SectionFade />
 
       {/* Founder Story */}
       <section className="py-16 px-4">

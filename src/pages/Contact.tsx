@@ -2,7 +2,6 @@ import React from 'react';
 import { Phone, MapPin, Instagram, Facebook, Youtube } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 import { siteConfig } from '@/lib/siteConfig';
-import { SectionFade } from '../components/SectionFade';
 
 const Contact = () => {
   return (
@@ -10,15 +9,12 @@ const Contact = () => {
       {/* Header */}
       <section className="pt-32 pb-16 px-4 bg-desert-tan">
         <div className="container mx-auto text-center">
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red">Get in Touch</h1>
           <p className="text-xl max-w-2xl mx-auto">
-            Have questions or feedback? We'd love to hear from you.
-            Fill out the form below or contact us directly.
+            Have questions, feedback, or want to discuss catering? We'd love to hear from you.
           </p>
         </div>
       </section>
-
-      <SectionFade />
 
       {/* Contact Section */}
       <section className="py-16 px-4">
