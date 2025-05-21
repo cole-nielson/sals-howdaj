@@ -1,9 +1,8 @@
-
 import React, { useState } from 'react';
 import { toast } from '@/components/ui/use-toast';
 
 const EmailSignup = () => {
-  const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -14,21 +13,21 @@ const EmailSignup = () => {
     try {
       // Placeholder for API call
       await new Promise(resolve => setTimeout(resolve, 1000));
-      console.log('Subscribed email:', email);
+      console.log('Subscribed phone:', phoneNumber);
       
       toast({
         title: "Success!",
-        description: "You've been added to our mailing list.",
+        description: "You've been added to our text updates list.",
         duration: 5000,
       });
       
-      setEmail('');
+      setPhoneNumber('');
     } catch (error) {
       console.error('Error subscribing:', error);
       
       toast({
         title: "Subscription failed",
-        description: "There was a problem adding your email.",
+        description: "There was a problem adding your phone number.",
         variant: "destructive",
         duration: 5000,
       });
@@ -44,14 +43,14 @@ const EmailSignup = () => {
           Stay Updated
         </h2>
         <p className="text-lg mb-8">
-          Subscribe to our newsletter for special offers, new menu items, and food truck location updates.
+          Text us at (208) 713-3936 for 10% off your next order and weekly deals!
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
           <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Your email address"
+            type="tel"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
+            placeholder="Your phone number"
             required
             className="flex-grow px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-desert-orange"
           />

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import HeroVideo from '@/components/HeroVideo';
@@ -45,12 +44,10 @@ const Index = () => {
       <section className="py-20 px-4" ref={refs.tagline}>
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-6 reveal">
-            A Taste of the Middle East in Boise
+            A Taste of Home
           </h2>
           <p className="text-lg md:text-xl mb-8 reveal">
-            Sal's Howdaj brings authentic Middle Eastern flavors to the heart of Idaho.
-            Our recipes have been passed down through generations, creating dishes that
-            transport you to the vibrant streets of Damascus, Beirut, and beyond.
+            Every dish made fresh, daily. No shortcuts. Just authentic Middle Eastern food the Howdaj way.
           </p>
           <div className="flex flex-wrap justify-center gap-4 reveal">
             <Link
@@ -81,15 +78,13 @@ const Index = () => {
               />
             </div>
             <div>
-              <h3 className="font-playfair text-3xl font-bold mb-4 reveal">Our Signature Kofta</h3>
+              <h3 className="font-playfair text-3xl font-bold mb-4 reveal">Steak Shawarma Plate</h3>
               <p className="text-lg mb-6 reveal">
-                Perfectly seasoned ground beef, shaped into kebabs and grilled to perfection. 
-                Served with aromatic rice, fresh vegetables, and our house-made sauces.
-                A true taste of Middle Eastern tradition.
+                Juicy, marinated steak over fragrant rice with fresh salad, hummus, and warm pita — a top pick by our regulars.
               </p>
               <div className="flex items-center mb-8 reveal">
                 <div className="h-0.5 w-12 bg-desert-orange mr-4"></div>
-                <span className="text-desert-orange font-medium">CHEF'S FAVORITE</span>
+                <span className="text-desert-orange font-medium">FAN FAVORITE</span>
               </div>
               <Link
                 to="/menu"

@@ -1,31 +1,26 @@
 import React, { useEffect } from 'react';
 
-// Simplified timeline data
+// Updated timeline data
 const timeline = [
   {
-    year: '2015',
-    title: 'The Idea',
-    description: 'Sal began experimenting with family recipes from his hometown.'
-  },
-  {
-    year: '2018',
-    title: 'First Pop-Up',
-    description: 'After years of perfecting recipes, Sal hosted his first pop-up at the Boise Farmers Market.'
-  },
-  {
-    year: '2020',
-    title: 'The Challenge',
-    description: 'Despite pandemic challenges, Sal persevered by offering take-home meal kits.'
+    year: '1993',
+    title: 'Food cart in Iraq',
+    description: 'Sal\'s Howdaj began as a humble food cart in Iraq.'
   },
   {
     year: '2022',
-    title: 'Food Truck Launch',
-    description: "Sal's Howdaj food truck officially hit the streets of Boise."
+    title: 'Opened as restaurant',
+    description: 'Sal Jr. brought his father\'s vision back to life and opened as a restaurant.'
   },
   {
     year: '2023',
-    title: 'Award Winning',
-    description: 'Named "Best Food Truck" by Boise Weekly readers.'
+    title: 'Temporary Closure',
+    description: 'Closed due to uncontrollable kitchen failure.'
+  },
+  {
+    year: '2025',
+    title: 'Reborn as food truck',
+    description: "Reborn as a Boise food truck, continuing the family tradition."
   }
 ];
 
@@ -79,20 +74,13 @@ const About = () => {
               />
             </div>
             <div>
-              <h2 className="font-playfair text-3xl font-bold mb-6 reveal">A Cinematic Comeback</h2>
+              <h2 className="font-playfair text-3xl font-bold mb-6 reveal">Our Journey</h2>
               <p className="text-lg mb-6 reveal">
-                Born and raised in Damascus, Sal grew up surrounded by the rich aromas of his mother's kitchen.
-                Every weekend, he would help prepare traditional family recipes, learning the art of Middle Eastern cuisine.
+                Sal's Howdaj began as a humble food cart in Iraq in 1997. After a long pause, Sal Jr. brought his father's vision back to life at 18. What started as a restaurant is now a bold food truck in Boise. Every dish is made fresh daily — no shortcuts, no freezer. Authentic, top-quality Middle Eastern food, the Howdaj way.
               </p>
               <p className="text-lg mb-6 reveal">
-                After moving to the United States in 2010, Sal found himself missing the authentic flavors of his homeland.
-                What started as cooking for friends soon became a passion project to bring those flavors to Boise.
+                1993: Food cart in Iraq • 2022: Opened as restaurant • 2023: Closed due to uncontrollable kitchen failure • 2025: Reborn as a Boise food truck.
               </p>
-              <p className="text-lg reveal">
-                "Food is more than sustenance—it's a story, a tradition, a connection to our roots. 
-                With every dish I serve, I'm sharing a piece of my heritage with Boise."
-              </p>
-              <div className="mt-6 text-right italic font-medium reveal">- Sal, Founder</div>
             </div>
           </div>
         </div>

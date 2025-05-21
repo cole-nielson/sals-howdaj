@@ -81,7 +81,7 @@ const FAQ = () => {
                 type="text"
                 placeholder="Search questions..."
                 value={filter}
-                onChange={(e) => setFilter(e.target.vaue)}
+                onChange={(e) => setFilter(e.target.value)}
                 className="w-full px-4 py-3 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-desert-orange"
               />
               <svg
