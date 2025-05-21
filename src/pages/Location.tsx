@@ -19,7 +19,7 @@ const Location = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
-            <div className="rounded-2xl overflow-hidden shadow-lg w-full h-80 md:h-[28rem] lg:h-[32rem]">
+            <div className="rounded-2xl overflow-hidden shadow-lg w-full h-full">
               <iframe
                 id="howdaj-map"
                 src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_KEY}&q=${encodeURIComponent(siteConfig.location.address)}`}

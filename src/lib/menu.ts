@@ -189,8 +189,5 @@ export const menuCategories = [
   { id: "wraps", name: "Wraps" },
   { id: "sides", name: "Sides" },
   { id: "drinks", name: "Drinks" },
-  { id: "desserts", name: "Desserts" },
-  { id: "vegetarian", name: "Vegetarian" },
-  { id: "popular", name: "Popular" },
-  { id: "gluten-free", name: "Gluten-Free" }
+  { id: "desserts", name: "Desserts" }
 ];
