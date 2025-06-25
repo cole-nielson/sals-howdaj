@@ -21,11 +21,11 @@ export const siteConfig = {
   },
   schedule: [
     { day: "Monday", hours: "Closed" },
-    { day: "Tuesday", hours: "12:00 PM - 9:00 PM" },
-    { day: "Wednesday", hours: "12:00 PM - 9:00 PM" },
-    { day: "Thursday", hours: "12:00 PM - 9:00 PM" },
-    { day: "Friday", hours: "12:00 PM - 9:00 PM" },
-    { day: "Saturday", hours: "12:00 PM - 9:00 PM" },
-    { day: "Sunday", hours: "12:00 PM - 9:00 PM" },
+    { day: "Tuesday", hours: "1:00 PM - 8:00 PM" },
+    { day: "Wednesday", hours: "1:00 PM - 8:00 PM" },
+    { day: "Thursday", hours: "1:00 PM - 8:00 PM" },
+    { day: "Friday", hours: "3:00 PM - 10:00 PM" },
+    { day: "Saturday", hours: "1:00 PM - 8:00 PM" },
+    { day: "Sunday", hours: "1:00 PM - 8:00 PM" },
   ]
 };

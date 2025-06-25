@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import HeroVideo from '@/components/HeroVideo';
+import HeroCarousel from '@/components/HeroCarousel';
 import EmailSignup from '@/components/EmailSignup';
 
 const Index = () => {
@@ -38,7 +38,7 @@ const Index = () => {
 
   return (
     <>
-      <HeroVideo />
+      <HeroCarousel />
 
       {/* Tagline Section */}
       <section className="py-20 px-4" ref={refs.tagline}>

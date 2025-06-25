@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export interface MenuItemProps {
@@ -8,6 +7,7 @@ export interface MenuItemProps {
   price: string;
   image: string;
   tags?: string[];
+  imagePosition?: string;
 }
 
 const MenuCard: React.FC<MenuItemProps> = ({
@@ -15,7 +15,8 @@ const MenuCard: React.FC<MenuItemProps> = ({
   description,
   price,
   image,
-  tags = []
+  tags = [],
+  imagePosition = 'center'
 }) => {
   return (
     <div className="bg-desert-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 hover-scale">
@@ -24,6 +25,7 @@ const MenuCard: React.FC<MenuItemProps> = ({
           src={image}
           alt={name}
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          style={{ objectPosition: imagePosition }}
         />
       </div>
       <div className="p-6">
