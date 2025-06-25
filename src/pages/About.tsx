@@ -78,9 +78,6 @@ const About = () => {
               <p className="text-lg mb-6 reveal">
                 Sal's Howdaj began as a humble food cart in Iraq in 1997. After a long pause, Sal Jr. brought his father's vision back to life at 18. What started as a restaurant is now a bold food truck in Boise. Every dish is made fresh daily — no shortcuts, no freezer. Authentic, top-quality Middle Eastern food, the Howdaj way.
               </p>
-              <p className="text-lg mb-6 reveal">
-                1993: Food cart in Iraq • 2022: Opened as restaurant • 2023: Closed due to uncontrollable kitchen failure • 2025: Reborn as a Boise food truck.
-              </p>
             </div>
           </div>
         </div>
