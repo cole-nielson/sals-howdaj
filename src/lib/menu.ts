@@ -7,16 +7,16 @@ export const menuData: MenuItemProps[] = [
     name: "Chicken Shawarma Plate",
     description: "Marinated chicken served with rice, salad, hummus, and warm pita",
     price: "$16",
-    image: "/updated_img/RadionStudios-20.jpeg",
+    image: "/images/menu/chicken-shawarma-plate.jpeg",
     tags: ["Plates", "Popular"],
     imagePosition: "center 60%",
   },
   {
     id: "beef-shawarma-plate", 
     name: "Beef Shawarma Plate",
-    description: "Juicy, marinated beef over fragrant rice with fresh salad, hummus, and warm pita",
+    description: "Juicy, marinated beef served with hummus, rice, side salad, jajik, tartoor & sweet pomegranate sauce and warm Iraqi bread.",
     price: "$18",
-    image: "/updated_img/RadionStudios-6.jpeg",
+    image: "/images/menu/beef-shawarma-plate.jpeg",
     tags: ["Plates"],
     imagePosition: "center 60%",
   },
@@ -25,7 +25,7 @@ export const menuData: MenuItemProps[] = [
     name: "1/2 Chicken & 1/2 Beef Plate",
     description: "The best of both worlds - our chicken and beef shawarma served together",
     price: "$17",
-    image: "/updated_img/RadionStudios-5.jpeg",
+    image: "/images/menu/half-chicken-beef-plate.jpeg",
     tags: ["Plates", "Popular"],
     imagePosition: "center 60%",
   },
@@ -36,7 +36,7 @@ export const menuData: MenuItemProps[] = [
     name: "Falafel Dish",
     description: "Crispy falafel served with tahini sauce, rice, salad, and pita bread",
     price: "$17",
-    image: "/updated_img/RadionStudios-22.jpeg",
+    image: "/images/menu/falafel-dish.jpeg",
     tags: ["Fried Dishes", "Vegetarian"]
   },
   {
@@ -44,41 +44,41 @@ export const menuData: MenuItemProps[] = [
     name: "Sambusa Dish",
     description: "Crispy pastry triangles filled with seasoned meat, served with rice and salad",
     price: "$18",
-    image: "/updated_img/RadionStudios-24.jpeg",
+    image: "/images/menu/sambusa-dish.jpeg",
     tags: ["Fried Dishes"]
   },
   {
     id: "combo-dish",
     name: "Combo Dish",
-    description: "A generous portion of falafel and sambusa with rice, salad, and signature sauces",
+    description: "4 falafel, 4 Sambusas, rice, side salad, hummus, jajik, sauces, meat or falafel wrap and bread",
     price: "$25",
-    image: "/updated_img/RadionStudios-16.jpeg",
+    image: "/images/menu/combo-dish.jpeg",
     tags: ["Fried Dishes", "Popular"]
   },
   
   // Wraps
   {
     id: "chicken-shawarma-wrap",
-    name: "Chicken Shawarma Wrap",
+    name: "Chicken shawarma wrap meal",
     description: "Seasoned chicken wrapped in warm pita with garlic sauce and pickles",
-    price: "$11",
-    image: "/lovable-uploads/34ab7668-b0a7-4272-ba68-9ad5cb53bfc2.png",
+    price: "$16",
+    image: "/images/menu/wrap-placeholder.png",
     tags: ["Wraps", "Popular"]
   },
   {
     id: "beef-shawarma-wrap",
-    name: "Beef Shawarma Wrap",
+    name: "Beef Shawarma wrap meal",
     description: "Marinated beef wrapped in warm pita with garlic sauce and pickles",
-    price: "$13",
-    image: "/lovable-uploads/34ab7668-b0a7-4272-ba68-9ad5cb53bfc2.png",
+    price: "$18",
+    image: "/images/menu/wrap-placeholder.png",
     tags: ["Wraps"]
   },
   {
     id: "falafel-wrap",
-    name: "Falafel Wrap",
+    name: "Falafel wrap meal",
     description: "Crispy falafel wrapped in pita with tahini, vegetables and house sauce",
-    price: "$11",
-    image: "/lovable-uploads/34ab7668-b0a7-4272-ba68-9ad5cb53bfc2.png",
+    price: "$17",
+    image: "/images/menu/wrap-placeholder.png",
     tags: ["Wraps", "Vegetarian"]
   },
   
@@ -88,7 +88,7 @@ export const menuData: MenuItemProps[] = [
     name: "Hummus with Bread",
     description: "Creamy hummus served with olive oil, paprika, and warm pita bread",
     price: "$7",
-    image: "/updated_img/RadionStudios-4.jpeg",
+    image: "/images/menu/hummus-with-bread.jpeg",
     tags: ["Sides", "Vegetarian", "Gluten-Free"]
   },
   {
@@ -96,7 +96,7 @@ export const menuData: MenuItemProps[] = [
     name: "Jajik with Bread",
     description: "Refreshing yogurt with cucumber and mint, served with pita bread",
     price: "$7",
-    image: "/updated_img/RadionStudios-35.jpeg",
+    image: "/images/menu/jajik-with-bread.jpg",
     tags: ["Sides", "Vegetarian", "Gluten-Free"]
   },
   {
@@ -104,7 +104,7 @@ export const menuData: MenuItemProps[] = [
     name: "Chickpea Salad",
     description: "A refreshing mix of chickpeas, vegetables, and herbs",
     price: "$7",
-    image: "/updated_img/RadionStudios-35.jpeg",
+    image: "/images/menu/chickpea-salad.jpeg",
     tags: ["Sides", "Vegetarian", "Gluten-Free"]
   },
   
@@ -114,7 +114,7 @@ export const menuData: MenuItemProps[] = [
     name: "Laban",
     description: "Traditional Middle Eastern yogurt drink",
     price: "$4",
-    image: "/updated_img/RadionStudios-1.jpeg",
+    image: "/images/menu/laban.jpeg",
     tags: ["Drinks"]
   },
   
@@ -124,7 +124,7 @@ export const menuData: MenuItemProps[] = [
     name: "Burma",
     description: "Traditional Middle Eastern pastry with nuts and honey",
     price: "$1.50",
-    image: "/updated_img/RadionStudios-30.jpeg",
+    image: "/images/menu/burma.jpeg",
     tags: ["Desserts"],
     imagePosition: "center 85%",
   }

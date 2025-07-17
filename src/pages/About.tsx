@@ -53,7 +53,7 @@ const About = () => {
   return (
     <>
       {/* Header */}
-      <section className="pt-32 pb-16 px-4 bg-desert-tan">
+      <section className="pt-32 pb-16 px-4" bg-desert-tan>
         <div className="container mx-auto text-center">
           <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red">Our Story</h1>
           <p className="text-xl max-w-2xl mx-auto">
@@ -68,7 +68,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="reveal">
               <img
-                src="/updated_img/RadionStudios-41.jpeg"
+                src="/images/pages/about-hero.jpeg"
                 alt="Founder of Sal's Howdaj"
                 className="rounded-2xl shadow-lg w-full h-auto"
               />
@@ -84,7 +84,7 @@ const About = () => {
       </section>
 
       {/* Statistics */}
-      <section className="py-16 px-4 bg-desert-tan">
+      <section className="py-16 px-4" bg-desert-tan>
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="p-8">
@@ -149,7 +149,7 @@ const About = () => {
       </section>
 
       {/* Values */}
-      <section className="py-16 px-4 bg-desert-tan">
+      <section className="py-16 px-4" bg-desert-tan>
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="font-playfair text-3xl font-bold mb-6 reveal">Our Values</h2>
           <p className="text-lg mb-12 reveal">

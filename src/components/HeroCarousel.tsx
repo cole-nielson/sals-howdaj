@@ -25,10 +25,10 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({
   buttonText = "View Our Menu",
   buttonLink = "/menu",
   images = [
-    "/updated_img/RadionStudios-16.jpeg",
-    "/updated_img/RadionStudios-33.jpeg",
-    "/updated_img/RadionStudios-35.jpeg",
-    "/updated_img/RadionStudios-29.jpeg",
+    "/images/gallery/gallery-1.jpeg",
+    "/images/gallery/gallery-2.jpeg",
+    "/images/gallery/gallery-3.jpeg",
+    "/images/gallery/gallery-4.jpeg",
   ],
   overlayOpacity = "opacity-50"
 }) => {

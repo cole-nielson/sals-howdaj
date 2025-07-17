@@ -76,7 +76,7 @@ const Catering = () => {
             
             <div>
               <img
-                src="/lovable-uploads/dd692edd-2445-4490-ad54-882815cfc842.png"
+                src="/images/pages/catering-hero.png"
                 alt="Catering spread"
                 className="rounded-2xl shadow-lg w-full h-auto"
               />

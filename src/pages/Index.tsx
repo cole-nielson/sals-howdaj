@@ -72,15 +72,15 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="reveal">
               <img
-                src="/lovable-uploads/dd692edd-2445-4490-ad54-882815cfc842.png"
+                src="/images/pages/homepage-feature.png"
                 alt="Signature Dish"
                 className="rounded-2xl shadow-lg w-full h-auto"
               />
             </div>
             <div>
-              <h3 className="font-playfair text-3xl font-bold mb-4 reveal">Steak Shawarma Plate</h3>
+              <h3 className="font-playfair text-3xl font-bold mb-4 reveal">Beef Shawarma Plate</h3>
               <p className="text-lg mb-6 reveal">
-                Juicy, marinated steak over fragrant rice with fresh salad, hummus, and warm pita — a top pick by our regulars.
+                Juicy, marinated beef served with hummus, rice, side salad, jajik, tartoor & sweet pomegranate sauce and warm Iraqi bread.
               </p>
               <div className="flex items-center mb-8 reveal">
                 <div className="h-0.5 w-12 bg-desert-orange mr-4"></div>
