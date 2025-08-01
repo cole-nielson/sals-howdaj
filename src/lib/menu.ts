@@ -9,7 +9,7 @@ export const menuData: MenuItemProps[] = [
     price: "$16",
     image: "/images/menu/chicken-shawarma-plate.jpeg",
     tags: ["Plates", "Popular"],
-    imagePosition: "center 60%",
+    imagePosition: "center 65%",
   },
   {
     id: "beef-shawarma-plate", 
@@ -18,7 +18,7 @@ export const menuData: MenuItemProps[] = [
     price: "$18",
     image: "/images/menu/beef-shawarma-plate.jpeg",
     tags: ["Plates"],
-    imagePosition: "center 60%",
+    imagePosition: "center 70%",
   },
   {
     id: "half-chicken-beef-plate",
@@ -27,7 +27,7 @@ export const menuData: MenuItemProps[] = [
     price: "$17",
     image: "/images/menu/half-chicken-beef-plate.jpeg",
     tags: ["Plates", "Popular"],
-    imagePosition: "center 60%",
+    imagePosition: "center 35%",
   },
   
   // Fried Dishes
@@ -37,7 +37,8 @@ export const menuData: MenuItemProps[] = [
     description: "Crispy falafel served with tahini sauce, rice, salad, and pita bread",
     price: "$17",
     image: "/images/menu/falafel-dish.jpeg",
-    tags: ["Fried Dishes", "Vegetarian"]
+    tags: ["Fried Dishes", "Vegetarian"],
+    imagePosition: "center 70%"
   },
   {
     id: "sambusa-dish",
@@ -45,7 +46,8 @@ export const menuData: MenuItemProps[] = [
     description: "Crispy pastry triangles filled with seasoned meat, served with rice and salad",
     price: "$18",
     image: "/images/menu/sambusa-dish.jpeg",
-    tags: ["Fried Dishes"]
+    tags: ["Fried Dishes"],
+    imagePosition: "center 40%"
   },
   {
     id: "combo-dish",
@@ -53,7 +55,8 @@ export const menuData: MenuItemProps[] = [
     description: "4 falafel, 4 Sambusas, rice, side salad, hummus, jajik, sauces, meat or falafel wrap and bread",
     price: "$25",
     image: "/images/menu/combo-dish.jpeg",
-    tags: ["Fried Dishes", "Popular"]
+    tags: ["Fried Dishes", "Popular"],
+    imagePosition: "center 50%"
   },
   
   // Wraps
@@ -89,7 +92,8 @@ export const menuData: MenuItemProps[] = [
     description: "Creamy hummus served with olive oil, paprika, and warm pita bread",
     price: "$7",
     image: "/images/menu/hummus-with-bread.jpeg",
-    tags: ["Sides", "Vegetarian", "Gluten-Free"]
+    tags: ["Sides", "Vegetarian", "Gluten-Free"],
+    imagePosition: "center 75%"
   },
   {
     id: "jajik-with-bread",
@@ -97,7 +101,8 @@ export const menuData: MenuItemProps[] = [
     description: "Refreshing yogurt with cucumber and mint, served with pita bread",
     price: "$7",
     image: "/images/menu/jajik-with-bread.jpg",
-    tags: ["Sides", "Vegetarian", "Gluten-Free"]
+    tags: ["Sides", "Vegetarian", "Gluten-Free"],
+    imagePosition: "center 80%"
   },
   {
     id: "chickpea-salad",
@@ -105,7 +110,8 @@ export const menuData: MenuItemProps[] = [
     description: "A refreshing mix of chickpeas, vegetables, and herbs",
     price: "$7",
     image: "/images/menu/chickpea-salad.jpeg",
-    tags: ["Sides", "Vegetarian", "Gluten-Free"]
+    tags: ["Sides", "Vegetarian", "Gluten-Free"],
+    imagePosition: "center 45%"
   },
   
   // Drinks
@@ -115,7 +121,8 @@ export const menuData: MenuItemProps[] = [
     description: "Traditional Middle Eastern yogurt drink",
     price: "$4",
     image: "/images/menu/laban.jpeg",
-    tags: ["Drinks"]
+    tags: ["Drinks"],
+    imagePosition: "center 60%"
   },
   
   // Desserts
@@ -126,7 +133,7 @@ export const menuData: MenuItemProps[] = [
     price: "$1.50",
     image: "/images/menu/burma.jpeg",
     tags: ["Desserts"],
-    imagePosition: "center 85%",
+    imagePosition: "center 70%",
   }
 ];
 

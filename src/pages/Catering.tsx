@@ -1,6 +1,7 @@
 import React from 'react';
 import EmailSignup from '@/components/EmailSignup';
 import { siteConfig } from '@/lib/siteConfig';
+import LazyImage from '@/components/LazyImage';
 
 const Catering = () => {
   return (
@@ -75,7 +76,7 @@ const Catering = () => {
             </div>
             
             <div>
-              <img
+              <LazyImage
                 src="/images/pages/catering-hero.png"
                 alt="Catering spread"
                 className="rounded-2xl shadow-lg w-full h-auto"

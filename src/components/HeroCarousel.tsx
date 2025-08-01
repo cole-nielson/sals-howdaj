@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Autoplay from "embla-carousel-autoplay";
+import LazyImage from './LazyImage';
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -51,7 +52,11 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({
           {images.map((src, index) => (
             <CarouselItem key={index} className="pl-0">
               <div className="h-screen w-full">
-                <img src={src} className="h-full w-full object-cover" alt={`Slide ${index + 1}`} />
+                <LazyImage 
+                  src={src} 
+                  alt={`Slide ${index + 1}`}
+                  className="h-full w-full object-cover"
+                />
               </div>
             </CarouselItem>
           ))}

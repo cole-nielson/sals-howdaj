@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import LazyImage from '@/components/LazyImage';
 
 // Updated timeline data
 const timeline = [
@@ -67,7 +68,7 @@ const About = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="reveal">
-              <img
+              <LazyImage
                 src="/images/pages/about-hero.jpeg"
                 alt="Founder of Sal's Howdaj"
                 className="rounded-2xl shadow-lg w-full h-auto"

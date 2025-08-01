@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyImage from './LazyImage';
 
 export interface MenuItemProps {
   id: string;
@@ -21,10 +22,10 @@ const MenuCard: React.FC<MenuItemProps> = ({
   return (
     <div className="bg-desert-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 hover-scale">
       <div className="relative h-64 overflow-hidden">
-        <img
+        <LazyImage
           src={image}
           alt={name}
-          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          className="transition-transform duration-300 hover:scale-105"
           style={{ objectPosition: imagePosition }}
         />
       </div>
