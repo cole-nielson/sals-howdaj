@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center">
               <img
-                src="/images/branding/logo.png"
+                src="/images-optimized/branding/logo.webp"
                 alt="Sal's Howdaj Logo"
                 className="h-14 w-auto"
               />

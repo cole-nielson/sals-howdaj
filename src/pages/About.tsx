@@ -69,7 +69,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="reveal">
               <LazyImage
-                src="/images/pages/about-hero.jpeg"
+                src="/images-optimized/pages/about-hero.webp"
                 alt="Founder of Sal's Howdaj"
                 className="rounded-2xl shadow-lg w-full h-auto"
               />

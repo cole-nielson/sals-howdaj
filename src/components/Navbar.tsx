@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
             <img
-              src="/images/branding/logo.png"
+              src="/images-optimized/branding/logo.webp"
               alt="Sal's Howdaj Logo"
               className="h-12 w-auto"
             />

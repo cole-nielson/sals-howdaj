@@ -73,7 +73,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="reveal">
               <LazyImage
-                src="/images/pages/homepage-feature.png"
+                src="/images-optimized/pages/homepage-feature.webp"
                 alt="Signature Dish"
                 className="rounded-2xl shadow-lg w-full h-auto"
               />

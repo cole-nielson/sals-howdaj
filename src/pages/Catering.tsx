@@ -77,7 +77,7 @@ const Catering = () => {
             
             <div>
               <LazyImage
-                src="/images/pages/catering-hero.png"
+                src="/images-optimized/pages/catering-hero.webp"
                 alt="Catering spread"
                 className="rounded-2xl shadow-lg w-full h-auto"
               />
