@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 
 // Import layout and pages
 import Layout from "@/components/Layout";
+import ScrollToTop from "@/components/ScrollToTop";
 import Index from "@/pages/Index";
 import Menu from "@/pages/Menu";
 import About from "@/pages/About";
@@ -25,6 +26,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout><Index /></Layout>} />
           <Route path="/menu" element={<Layout><Menu /></Layout>} />
