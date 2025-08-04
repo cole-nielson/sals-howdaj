@@ -76,6 +76,7 @@ const Index = () => {
                 src="/images-optimized/pages/homepage-feature.webp"
                 alt="Signature Dish"
                 className="rounded-2xl shadow-lg w-full h-auto"
+                priority
               />
             </div>
             <div>

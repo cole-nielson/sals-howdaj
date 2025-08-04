@@ -56,6 +56,7 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({
                   src={src} 
                   alt={`Slide ${index + 1}`}
                   className="h-full w-full object-cover"
+                  priority={index < 2}
                 />
               </div>
             </CarouselItem>

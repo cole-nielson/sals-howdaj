@@ -9,6 +9,7 @@ export interface MenuItemProps {
   image: string;
   tags?: string[];
   imagePosition?: string;
+  priority?: boolean;
 }
 
 const MenuCard: React.FC<MenuItemProps> = ({
@@ -17,7 +18,8 @@ const MenuCard: React.FC<MenuItemProps> = ({
   price,
   image,
   tags = [],
-  imagePosition = 'center'
+  imagePosition = 'center',
+  priority = false
 }) => {
   return (
     <div className="bg-desert-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 hover-scale">
@@ -27,6 +29,7 @@ const MenuCard: React.FC<MenuItemProps> = ({
           alt={name}
           className="transition-transform duration-300 hover:scale-105"
           style={{ objectPosition: imagePosition }}
+          priority={priority}
         />
       </div>
       <div className="p-6">
