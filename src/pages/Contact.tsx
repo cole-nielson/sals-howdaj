@@ -1,16 +1,40 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Phone, MapPin, Instagram, Facebook, Youtube } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 import { siteConfig } from '@/lib/siteConfig';
 
 const Contact = () => {
+  // Handle scroll animations
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    // Observe all reveal elements
+    document.querySelectorAll('.reveal').forEach((el) => {
+      observer.observe(el);
+    });
+
+    return () => {
+      document.querySelectorAll('.reveal').forEach((el) => {
+        observer.unobserve(el);
+      });
+    };
+  }, []);
   return (
     <>
       {/* Header */}
       <section className="pt-32 pb-16 px-4 bg-desert-tan">
         <div className="container mx-auto text-center">
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red">Get in Touch</h1>
-          <p className="text-xl max-w-2xl mx-auto">
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red reveal">Get in Touch</h1>
+          <p className="text-xl max-w-2xl mx-auto reveal">
             Have questions, feedback, or want to discuss catering? We'd love to hear from you.
           </p>
         </div>
@@ -21,16 +45,16 @@ const Contact = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div>
+            <div className="reveal">
               <h2 className="font-playfair text-3xl font-bold mb-6">Send Us a Message</h2>
               <ContactForm />
             </div>
             
             {/* Contact Information */}
             <div className="lg:pl-8">
-              <h2 className="font-playfair text-3xl font-bold mb-6">Contact Information</h2>
+              <h2 className="font-playfair text-3xl font-bold mb-6 reveal">Contact Information</h2>
               
-              <div className="bg-desert-tan rounded-2xl p-8 mb-8">
+              <div className="bg-desert-tan rounded-2xl p-8 mb-8 reveal">
                 <div className="flex items-start mb-6">
                   <Phone className="text-desert-orange mr-4 mt-1" size={24} />
                   <div>
@@ -76,7 +100,7 @@ const Contact = () => {
               </div>
               
               {/* Follow Us */}
-              <div>
+              <div className="reveal">
                 <h3 className="font-playfair text-2xl font-bold mb-4">Follow Us</h3>
                 <div className="flex space-x-4">
                   <a 

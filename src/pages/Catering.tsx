@@ -1,16 +1,40 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import EmailSignup from '@/components/EmailSignup';
 import { siteConfig } from '@/lib/siteConfig';
 import LazyImage from '@/components/LazyImage';
 
 const Catering = () => {
+  // Handle scroll animations
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    // Observe all reveal elements
+    document.querySelectorAll('.reveal').forEach((el) => {
+      observer.observe(el);
+    });
+
+    return () => {
+      document.querySelectorAll('.reveal').forEach((el) => {
+        observer.unobserve(el);
+      });
+    };
+  }, []);
   return (
     <>
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4 relative bg-desert-tan">
         <div className="container mx-auto text-center">
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red">Catering Services</h1>
-          <p className="text-xl max-w-2xl mx-auto">
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red reveal">Catering Services</h1>
+          <p className="text-xl max-w-2xl mx-auto reveal">
             Bring the authentic flavors of Sal's Howdaj to your next event.
             From intimate gatherings to large celebrations.
           </p>
@@ -22,20 +46,20 @@ const Catering = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-playfair text-3xl font-bold mb-6">
+              <h2 className="font-playfair text-3xl font-bold mb-6 reveal">
                 Elevate Your Event with Middle Eastern Cuisine
               </h2>
-              <p className="text-lg mb-6">
+              <p className="text-lg mb-6 reveal">
                 Whether you're planning a corporate lunch, wedding reception, or birthday celebration, 
                 our catering services will add a unique and flavorful experience to your special occasion.
               </p>
-              <p className="text-lg mb-8">
+              <p className="text-lg mb-8 reveal">
                 We offer customized menus, professional service, and the same quality and authenticity 
                 that our food truck is known for.
               </p>
               
-              <h3 className="font-playfair text-xl font-bold mb-4">Our Catering Services Include:</h3>
-              <ul className="space-y-2 mb-8">
+              <h3 className="font-playfair text-xl font-bold mb-4 reveal">Our Catering Services Include:</h3>
+              <ul className="space-y-2 mb-8 reveal">
                 <li className="flex items-start">
                   <span className="text-desert-orange mr-2">•</span>
                   <span>Custom menu planning to fit your event's needs</span>
@@ -58,7 +82,7 @@ const Catering = () => {
                 </li>
               </ul>
               
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 reveal">
                 <a
                   href="/docs/catering-menu.pdf"
                   download
@@ -75,7 +99,7 @@ const Catering = () => {
               </div>
             </div>
             
-            <div>
+            <div className="reveal">
               <LazyImage
                 src="/images-optimized/pages/catering-hero.webp"
                 alt="Catering spread"
@@ -89,12 +113,12 @@ const Catering = () => {
       {/* Testimonials */}
       <section className="py-16 px-4 bg-desert-tan">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="font-playfair text-3xl font-bold text-center mb-12">
+          <h2 className="font-playfair text-3xl font-bold text-center mb-12 reveal">
             What Our Catering Clients Say
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-md">
+            <div className="bg-white p-8 rounded-2xl shadow-md reveal">
               <div className="flex items-center mb-6">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 rounded-full bg-desert-orange text-white flex items-center justify-center font-bold">
@@ -113,7 +137,7 @@ const Catering = () => {
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-2xl shadow-md">
+            <div className="bg-white p-8 rounded-2xl shadow-md reveal">
               <div className="flex items-center mb-6">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 rounded-full bg-desert-orange text-white flex items-center justify-center font-bold">

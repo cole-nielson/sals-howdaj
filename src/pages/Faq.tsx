@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Accordion,
   AccordionContent,
@@ -52,6 +52,31 @@ const faqData = [
 const FAQ = () => {
   const [filter, setFilter] = useState('');
   
+  // Handle scroll animations
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    // Observe all reveal elements
+    document.querySelectorAll('.reveal').forEach((el) => {
+      observer.observe(el);
+    });
+
+    return () => {
+      document.querySelectorAll('.reveal').forEach((el) => {
+        observer.unobserve(el);
+      });
+    };
+  }, []);
+  
   const filteredFaqs = filter 
     ? faqData.filter(faq => 
         faq.question.toLowerCase().includes(filter.toLowerCase()) || 
@@ -64,8 +89,8 @@ const FAQ = () => {
       {/* Header */}
       <section className="pt-32 pb-16 px-4 bg-desert-tan">
         <div className="container mx-auto text-center">
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red">Frequently Asked Questions</h1>
-          <p className="text-xl max-w-2xl mx-auto">
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red reveal">Frequently Asked Questions</h1>
+          <p className="text-xl max-w-2xl mx-auto reveal">
             Find answers to common questions about our food, services, and policies.
           </p>
         </div>
@@ -75,7 +100,7 @@ const FAQ = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-3xl">
           {/* Search */}
-          <div className="mb-12">
+          <div className="mb-12 reveal">
             <div className="relative">
               <input
                 type="text"
@@ -102,7 +127,7 @@ const FAQ = () => {
           </div>
           
           {/* Accordions */}
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-4 reveal">
             {filteredFaqs.length > 0 ? (
               filteredFaqs.map((faq, index) => (
                 <AccordionItem 
@@ -132,7 +157,7 @@ const FAQ = () => {
           </Accordion>
           
           {/* Contact CTA */}
-          <div className="mt-16 bg-desert-tan rounded-2xl p-8 text-center">
+          <div className="mt-16 bg-desert-tan rounded-2xl p-8 text-center reveal">
             <h3 className="font-playfair text-2xl font-bold mb-4">Still have questions?</h3>
             <p className="mb-6">
               If you couldn't find the answer you're looking for, please don't hesitate to contact us directly.

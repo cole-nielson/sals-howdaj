@@ -1,14 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { siteConfig } from '@/lib/siteConfig';
 
 const Location = () => {
+  // Handle scroll animations
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    // Observe all reveal elements
+    document.querySelectorAll('.reveal').forEach((el) => {
+      observer.observe(el);
+    });
+
+    return () => {
+      document.querySelectorAll('.reveal').forEach((el) => {
+        observer.unobserve(el);
+      });
+    };
+  }, []);
   return (
     <>
       {/* Header */}
       <section className="pt-32 pb-16 px-4 bg-desert-tan">
         <div className="container mx-auto text-center">
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red">Find Our Food Truck</h1>
-          <p className="text-xl max-w-2xl mx-auto">
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red reveal">Find Our Food Truck</h1>
+          <p className="text-xl max-w-2xl mx-auto reveal">
             We move around Boise to serve you the best Middle Eastern cuisine wherever you are.
             Check our current location and weekly schedule.
           </p>
@@ -18,7 +42,7 @@ const Location = () => {
       {/* Map Section */}
       <section className="py-16 px-4">
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div>
+          <div className="reveal">
             <div className="rounded-2xl overflow-hidden shadow-lg w-full h-full">
               <iframe
                 id="howdaj-map"
@@ -34,7 +58,7 @@ const Location = () => {
             </div>
           </div>
           
-          <div>
+          <div className="reveal">
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="font-playfair text-2xl font-bold mb-4">Current Location</h2>
               <p className="mb-4">{siteConfig.location.address}</p>
@@ -69,10 +93,10 @@ const Location = () => {
       {/* Special Events */}
       <section className="py-16 px-4 bg-desert-tan">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="font-playfair text-3xl font-bold text-center mb-8">Upcoming Special Locations</h2>
+          <h2 className="font-playfair text-3xl font-bold text-center mb-8 reveal">Upcoming Special Locations</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl shadow-md p-6">
+            <div className="bg-white rounded-2xl shadow-md p-6 reveal">
               <div className="text-desert-orange font-bold mb-2">June 15, 2025</div>
               <h3 className="font-playfair text-xl font-bold mb-2">Boise Farmers Market</h3>
               <p className="mb-4">10:00 AM - 2:00 PM</p>
@@ -81,7 +105,7 @@ const Location = () => {
               </p>
             </div>
             
-            <div className="bg-white rounded-2xl shadow-md p-6">
+            <div className="bg-white rounded-2xl shadow-md p-6 reveal">
               <div className="text-desert-orange font-bold mb-2">June 22, 2025</div>
               <h3 className="font-playfair text-xl font-bold mb-2">Food Truck Rally</h3>
               <p className="mb-4">5:00 PM - 9:00 PM</p>
@@ -91,7 +115,7 @@ const Location = () => {
             </div>
           </div>
           
-          <div className="mt-10 text-center">
+          <div className="mt-10 text-center reveal">
             <p className="text-lg mb-4">
               Want to request our food truck for your event?
             </p>

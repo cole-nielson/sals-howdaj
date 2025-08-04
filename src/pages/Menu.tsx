@@ -18,13 +18,38 @@ const Menu = () => {
     }
   }, [activeCategory]);
 
+  // Handle scroll animations
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    // Observe all reveal elements
+    document.querySelectorAll('.reveal').forEach((el) => {
+      observer.observe(el);
+    });
+
+    return () => {
+      document.querySelectorAll('.reveal').forEach((el) => {
+        observer.unobserve(el);
+      });
+    };
+  }, []);
+
   return (
     <>
       {/* Menu Header */}
       <section className="pt-32 pb-16 px-4 bg-desert-tan">
         <div className="container mx-auto text-center">
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red">Our Menu</h1>
-          <p className="text-xl max-w-2xl mx-auto">
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-brand-red reveal">Our Menu</h1>
+          <p className="text-xl max-w-2xl mx-auto reveal">
             Explore our authentic Middle Eastern dishes, made with fresh ingredients and traditional recipes.
           </p>
         </div>
@@ -33,7 +58,7 @@ const Menu = () => {
       {/* Category Filter */}
       <section className="py-8 px-4 bg-desert-white border-b">
         <div className="container mx-auto">
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4 reveal">
             {menuCategories.map(category => (
               <button
                 key={category.id}
@@ -54,7 +79,7 @@ const Menu = () => {
       {/* Menu Grid */}
       <section className="py-16 px-4">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
             {filteredItems.map((item, index) => (
               <MenuCard
                 key={item.id}
@@ -82,11 +107,11 @@ const Menu = () => {
       {/* Call to Action */}
       <section className="py-16 px-4 bg-desert-tan">
         <div className="container mx-auto text-center max-w-2xl">
-          <h2 className="font-playfair text-3xl font-bold mb-4">Ready to Order?</h2>
-          <p className="mb-6">
+          <h2 className="font-playfair text-3xl font-bold mb-4 reveal">Ready to Order?</h2>
+          <p className="mb-6 reveal">
             Visit our food truck today or contact us for catering options.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 reveal">
             <a
               href="/location"
               className="bg-brand-red hover:bg-opacity-90 text-white px-6 py-3 rounded-full transition-colors"
